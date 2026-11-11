@@ -1,0 +1,415 @@
+{
+  "info": {
+    "_postman_id": "9087f549-c6b2-494c-8d19-fd929c4289c5",
+    "name": "Catalogo.Api - Comercio Multibodega",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57563838",
+    "_collection_link": "https://go.postman.co/collection/57563838-9087f549-c6b2-494c-8d19-fd929c4289c5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Categorias",
+      "item": [
+        {
+          "name": "Listar categorias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Categorias",
+              "host": [
+                "https://localhost:7264"
+              ],
+              "path": [
+                "api",
+                "Categorias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear categorias",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Accesorios\",\n  \"descripcion\": \"Periféricos y complementos\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7264/api/Categorias",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Categorias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID categorias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Categorias/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Categorias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar categorias",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCategoria\": 1,\n  \"nombre\": \"Accesorios\",\n  \"descripcion\": \"Periféricos y complementos\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7264/api/Categorias/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Categorias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar categorias",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Categorias/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Categorias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Marcas",
+      "item": [
+        {
+          "name": "Listar marcas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Marcas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Marcas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear marcas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"TechNova\",\n  \"paisOrigen\": \"Ecuador\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7264/api/Marcas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Marcas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID marcas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Marcas/1",
+              "host": [
+                "https://localhost:7264"
+              ],
+              "path": [
+                "api",
+                "Marcas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar marcas",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idMarca\": 1,\n  \"nombre\": \"TechNova\",\n  \"paisOrigen\": \"Ecuador\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7264/api/Marcas/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Marcas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar marcas",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Marcas/1",
+              "host": [
+                "https://localhost:7264"
+              ],
+              "path": [
+                "api",
+                "Marcas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Productos",
+      "item": [
+        {
+          "name": "Listar productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Productos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear productos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCategoria\": 3,\n  \"idMarca\": 3,\n  \"nombre\": \"Teclado mecánico\",\n  \"sku\": \"TEC-MEC-001\",\n  \"precio\": 45.99,\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7264/api/Productos",
+              "host": [
+                "https://localhost:7264"
+              ],
+              "path": [
+                "api",
+                "Productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Productos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Productos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar productos",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idCategoria\": 3,\n  \"idMarca\": 3,\n  \"nombre\": \"Teclado mecánico\",\n  \"sku\": \"TEC-MEC-001\",\n  \"precio\": 45.99,\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7264/api/Productos/1",
+              "host": [
+                "https://localhost:7264"
+              ],
+              "path": [
+                "api",
+                "Productos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar productos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7264/api/Productos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7264",
+              "path": [
+                "api",
+                "Productos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:7264"
+    }
+  ]
+}

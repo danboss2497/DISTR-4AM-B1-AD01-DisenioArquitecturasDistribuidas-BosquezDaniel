@@ -1,0 +1,413 @@
+{
+  "info": {
+    "_postman_id": "793ecc03-26e9-4f65-8d00-be19065de283",
+    "name": "Pedidos.Api - Comercio Multibodega",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57563838",
+    "_collection_link": "https://go.postman.co/collection/57563838-793ecc03-26e9-4f65-8d00-be19065de283?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Clientes",
+      "item": [
+        {
+          "name": "Listar clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/Clientes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear clientes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Cliente de Prueba\",\n  \"cedula\": \"0000000001\",\n  \"correo\": \"cliente@example.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7205/api/Clientes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/Clientes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Clientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar clientes",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCliente\": 1,\n  \"nombres\": \"Cliente de Prueba\",\n  \"cedula\": \"0000000001\",\n  \"correo\": \"cliente@example.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7205/api/Clientes/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Clientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar clientes",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/Clientes/1",
+              "host": [
+                "https://localhost:7205"
+              ],
+              "path": [
+                "api",
+                "Clientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pedidos",
+      "item": [
+        {
+          "name": "Listar pedidos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/Pedidos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear pedidos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCliente\": 1,\n  \"total\": 45.99,\n  \"estado\": \"Pendiente\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7205/api/Pedidos",
+              "host": [
+                "https://localhost:7205"
+              ],
+              "path": [
+                "api",
+                "Pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID pedidos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/Pedidos/1",
+              "host": [
+                "https://localhost:7205"
+              ],
+              "path": [
+                "api",
+                "Pedidos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar pedidos",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idPedido\": 1,\n  \"idCliente\": 1,\n  \"total\": 45.99,\n  \"estado\": \"Pendiente\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7205/api/Pedidos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Pedidos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar pedidos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/Pedidos/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "Pedidos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DetallesPedido",
+      "item": [
+        {
+          "name": "Listar detallespedido",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/DetallesPedido",
+              "host": [
+                "https://localhost:7205"
+              ],
+              "path": [
+                "api",
+                "DetallesPedido"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear detallespedido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idPedido\": 1,\n  \"idProducto\": 1,\n  \"cantidad\": 1,\n  \"precioUnitario\": 45.99\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7205/api/DetallesPedido",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "DetallesPedido"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID detallespedido",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/DetallesPedido/1",
+              "host": [
+                "https://localhost:7205"
+              ],
+              "path": [
+                "api",
+                "DetallesPedido",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar detallespedido",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idDetalle\": 1,\n  \"idPedido\": 1,\n  \"idProducto\": 1,\n  \"cantidad\": 1,\n  \"precioUnitario\": 45.99\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7205/api/DetallesPedido/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7205",
+              "path": [
+                "api",
+                "DetallesPedido",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar detallespedido",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7205/api/DetallesPedido/1",
+              "host": [
+                "https://localhost:7205"
+              ],
+              "path": [
+                "api",
+                "DetallesPedido",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:7205"
+    }
+  ]
+}

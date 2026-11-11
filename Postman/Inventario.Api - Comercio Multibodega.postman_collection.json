@@ -1,0 +1,561 @@
+{
+  "info": {
+    "_postman_id": "68c99694-934b-47f7-8d1c-bccd77af442d",
+    "name": "Inventario.Api - Comercio Multibodega",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57563838",
+    "_collection_link": "https://go.postman.co/collection/57563838-68c99694-934b-47f7-8d1c-bccd77af442d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Bodegas",
+      "item": [
+        {
+          "name": "Listar bodegas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/Bodegas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Bodegas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear bodegas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Bodega Quito\",\n  \"ciudad\": \"Quito\",\n  \"direccion\": \"Av. Ejemplo 123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/Bodegas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Bodegas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID bodegas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/Bodegas/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Bodegas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar bodegas",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idBodega\": 1,\n  \"nombre\": \"Bodega Quito\",\n  \"ciudad\": \"Quito\",\n  \"direccion\": \"Av. Ejemplo 123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/Bodegas/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Bodegas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar bodegas",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/Bodegas/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Bodegas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Existencias",
+      "item": [
+        {
+          "name": "Listar existencias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/Existencias",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Existencias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear existencias",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"stock\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/Existencias",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Existencias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID existencias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/Existencias/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Existencias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar existencias",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idExistencia\": 1,\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"stock\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/Existencias/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Existencias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar existencias",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/Existencias/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "Existencias",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "MovimientosInventario",
+      "item": [
+        {
+          "name": "Listar movimientosinventario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/MovimientosInventario",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "MovimientosInventario"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear movimientosinventario",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"tipo\": \"Entrada\",\n  \"cantidad\": 5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/MovimientosInventario",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "MovimientosInventario"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID movimientosinventario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/MovimientosInventario/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "MovimientosInventario",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar movimientosinventario",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idMovimiento\": 1,\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"tipo\": \"Entrada\",\n  \"cantidad\": 5\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/MovimientosInventario/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "MovimientosInventario",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar movimientosinventario",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/MovimientosInventario/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "MovimientosInventario",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ReservasStock",
+      "item": [
+        {
+          "name": "Listar reservasstock",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/ReservasStock",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "ReservasStock"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear reservasstock",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"cantidad\": 2,\n  \"estado\": \"Activa\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/ReservasStock",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "ReservasStock"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID reservasstock",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/ReservasStock/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "ReservasStock",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar reservasstock",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idReserva\": 1,\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"cantidad\": 2,\n  \"estado\": \"Activa\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7056/api/ReservasStock/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "ReservasStock",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar reservasstock",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7056/api/ReservasStock/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7056",
+              "path": [
+                "api",
+                "ReservasStock",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:7056"
+    }
+  ]
+}

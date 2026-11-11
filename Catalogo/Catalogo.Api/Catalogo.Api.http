@@ -1,0 +1,14 @@
+@CatalogoHost = https://localhost:7264
+
+GET {{CatalogoHost}}/api/Categorias
+Accept: application/json
+
+###
+
+GET {{CatalogoHost}}/api/Marcas
+Accept: application/json
+
+###
+
+GET {{CatalogoHost}}/api/Productos
+Accept: application/json
